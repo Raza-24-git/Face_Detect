@@ -48,6 +48,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnCapture).setOnClickListener {
             startActivity(Intent(this, StartFaceActivity::class.java))
         }
+        findViewById<Button>(R.id.btnCapture2).setOnClickListener {
+            startActivity(Intent(this, StartFaceRegisterActivity::class.java))
+        }
 
         faceViewModel.faceMatchResult.observe(this) { result ->
             when (result.statusType) {

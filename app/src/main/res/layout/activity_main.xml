@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
 
+    <!-- Status TextView -->
     <TextView
         android:id="@+id/tvStatus"
         android:layout_width="match_parent"
-        android:layout_height="121dp"
-        android:layout_above="@+id/btnCapture"
-        android:layout_marginBottom="119dp"
-        android:gravity="center_vertical"
-        android:textAlignment="center"
-        android:text="Welcome to Face Detection Application"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/btnCapture"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_500"
-        android:text="@string/capture_and_detect"
+        android:text="Welcome to Face Detection Application"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:layout_centerInParent="true" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLayout"
+        app:layout_constraintVertical_bias="0.3" />
 
-</RelativeLayout>
+    <!-- Button Layout -->
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:id="@+id/btnCapture"
+            style="@style/CommonButtonStyle"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Capture and Detect" />
+
+        <Button
+            android:id="@+id/btnCapture2"
+            style="@style/CommonButtonStyle"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Capture and Register" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
