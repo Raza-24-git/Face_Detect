@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyAttendance</string>
+    <string name="capture_and_detect">Capture and Detect</string>
+    <string name="capture_status">Welcome to Face Detection Apps</string>
+</resources>
