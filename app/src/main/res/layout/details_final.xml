@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Title and Description -->
+    <ImageView
+        android:id="@+id/centerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Feature Section (2 Items per Row) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="House Type" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Room Qty" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Bathrooms" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Rent Fee" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="WiFi Available" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Kitchen" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 4 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Parking" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Gym Access" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 5 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Security" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Swimming Pool" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 6 -->
+        <LinearLayout style="@style/FeatureRow">
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Furnished" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FeatureItem">
+
+                <ImageView
+                    style="@style/FeatureIcon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    style="@style/FeatureText"
+                    android:text="Balcony" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google Map" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact" />
+    </LinearLayout>
+</LinearLayout>

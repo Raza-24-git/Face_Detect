@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Custom Theme -->
     <style name="Theme.MyAttendance" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -16,7 +16,63 @@
         <item name="android:backgroundTint">@color/purple_500</item>
         <item name="android:layout_weight">1</item> <!-- Makes buttons equal in width -->
     </style>
+    <style name="FeatureRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- Single Feature (1 Column) -->
+    <style name="FeatureItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 
+    <style name="FeatureIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="FeatureText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Input Field Row -->
+    <style name="InputField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- Input Icons -->
+    <style name="InputIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <!-- Input TextField -->
+    <style name="InputText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">#EEEEEE</item>
+    </style>
+
+    <!-- Dropdown (Spinner) -->
+    <style name="InputSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+    </style>
 </resources>
 
 
