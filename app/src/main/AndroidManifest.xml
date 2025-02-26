@@ -33,6 +33,7 @@
 
         <activity android:name=".StartFaceActivity" />
         <activity android:name=".StartFaceRegisterActivity" />
+        <activity android:name=".TestInput" />
     </application>
 
 </manifest>

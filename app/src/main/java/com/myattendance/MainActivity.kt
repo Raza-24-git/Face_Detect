@@ -1,5 +1,6 @@
 package com.myattendance
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var faceDetector: FaceDetector
 
     private lateinit var textToSpeech: TextToSpeech
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,6 +47,9 @@ class MainActivity : AppCompatActivity() {
             .build()
         faceDetector = FaceDetection.getClient(options)
 
+        findViewById<Button>(R.id.btn_ts).setOnClickListener {
+            startActivity(Intent(this, TestInput::class.java))
+        }
         findViewById<Button>(R.id.btnCapture).setOnClickListener {
             startActivity(Intent(this, StartFaceActivity::class.java))
         }
