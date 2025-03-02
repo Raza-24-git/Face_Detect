@@ -49,7 +49,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_ts).setOnClickListener {
             startActivity(Intent(this, TestInput::class.java))
-        }
+        }/*findViewById<Button>(R.id.btn_ts).setOnClickListener {
+            startActivity(Intent(this, TestInput::class.java))
+        }*/
         findViewById<Button>(R.id.btnCapture).setOnClickListener {
             startActivity(Intent(this, StartFaceActivity::class.java))
         }
