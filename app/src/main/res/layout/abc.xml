@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StartFaceActivity">
 
-    <!-- Camera Preview -->
+    <!-- Camera Preview bfgbfggf  -->
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
         android:layout_width="match_parent"
